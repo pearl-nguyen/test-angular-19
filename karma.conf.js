@@ -32,9 +32,7 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    customWebpackConfig: {
-      path: './extra-webpack.config.js'
-    },
+    webpack: require('./extra-webpack.config.js'),
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,

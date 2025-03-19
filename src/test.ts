@@ -8,7 +8,6 @@ import {
 } from '@angular/platform-browser-dynamic/testing';
 
 import { ngMocks } from 'ng-mocks';
-import { AppComponent } from './app/app.component';
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(

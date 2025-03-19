@@ -3,16 +3,18 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { provideRouter, RouterModule, RouterOutlet } from '@angular/router';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
+    beforeEach(() => TestBed.configureTestingModule({
+      imports: [RouterModule.forRoot([])], // Ensure RouterModule is imported
       declarations: [AppComponent],
-      imports: [
-        CommonModule,
-        RouterModule.forRoot([])
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      providers: [
+        provideRouter([])
       ]
-    }).compileComponents();
+    }).compileComponents());
   });
 
   it('should create the app', () => {

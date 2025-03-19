@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "clean": "rd /s /q dist && rd /s /q node_modules && rd /s /q ./package-lock.json && npm cache clean --force"
   },
   "private": true,
   "dependencies": {

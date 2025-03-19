@@ -82,7 +82,7 @@
           "builder": "@angular-builders/custom-webpack:karma",
           "options": {
             "polyfills": [
-              "zone.js",
+              "src/polyfills.ts",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
